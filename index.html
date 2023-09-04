@@ -1,45 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <div class="calculator">
-            <input type="text" placeholder="0" id="input">
-            <div>
-                <button class="operator">AC</button>
-                <button class="operator">DEL</button>
-                <button class="operator">%</button>
-                <button class="operator">/</button>
+        <div class="container">
+            <h1 class="heading">
+                CALCULATOR
+            </h1>
+            <div class="calculator">
+
+                <input type="text" placeholder="0" id="input">
+                <div>
+                    <button class="btn operator">AC</button>
+                    <button class="btn operator">DEL</button>
+                    <button class="btn operator">%</button>
+                    <button class="btn operator">/</button>
+                </div>
+                <div>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn operator">*</button>
+                </div>
+                <div>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn operator">-</button>
+                </div>
+                <div>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn operator">+</button>
+                </div>
+                <div>
+                    <button class="btn">00</button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button class="btn equalBtn">=</button>
+                </div>
+                <button class="history">View History</button>
+                <button class="music fa-solid fa-volume-high"></button>
             </div>
-            <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operator">*</button>
-            </div>
-            <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operator">-</button> 
-            </div>
-            <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="operator">+</button>
-            </div>
-            <div>
-                <button>00</button>
-                <button>0</button>
-                <button>.</button>
-                <button class="equalBtn">=</button>
+            <div class="delete-history">
+                <h3 class="allhistory"></h3>
+                <button class="fa-solid fa-xmark crossbtn"></button>
+                <button class="dltbtn">Delete History</button>
             </div>
         </div>
-  </body>
+
+    </body>
+    <script src="https://kit.fontawesome.com/b774f69ca3.js"
+        crossorigin="anonymous"></script>
 </html>
